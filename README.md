@@ -110,8 +110,6 @@ energy-vol-surface/
 
 python
 
-
-
 import numpy as np
 
 from vol\_surface import calibrate\_sabr\_slice, plot\_sabr\_slice, check\_butterfly\_arbitrage
@@ -150,9 +148,7 @@ fig.show()
 
 
 
-bash 
-
-
+bash
 
 pytest -v
 
