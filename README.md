@@ -74,7 +74,6 @@ fig.show()
 
 ```text
 energy-vol-surface/
-├── data/                         # Sample market option chains
 ├── src/vol_surface/
 │   ├── __init__.py               # Top-level API exports
 │   ├── black76.py                # Black-76 closed forms, Greeks, and IV solver
