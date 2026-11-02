@@ -46,28 +46,7 @@ Requires Python 3.10 or newer.
 
 ## Quickstart
 
-```python
-import numpy as np
-from vol_surface import calibrate_sabr_slice, plot_sabr_slice, check_butterfly_arbitrage
-
-F, T, beta = 82.50, 0.5, 0.7
-strikes = np.array([65.0, 70.0, 75.0, 80.0, 82.5, 85.0, 90.0, 95.0, 100.0])
-market_vols = np.array([0.38, 0.35, 0.33, 0.31, 0.305, 0.30, 0.295, 0.30, 0.31])
-
-# Calibrate SABR parameters on one maturity slice
-params = calibrate_sabr_slice(F, strikes, market_vols, T, beta=beta)
-print(f"Alpha: {params.alpha:.4f}, Rho: {params.rho:.4f}, Nu: {params.nu:.4f}, RMSE: {params.rmse:.6f}")
-
-# Static butterfly arbitrage check
-valid = check_butterfly_arbitrage(F, strikes, market_vols, T)
-print(f"Arbitrage-free: {valid}")
-
-# Plot the calibrated smile
-fig = plot_sabr_slice(F, strikes, market_vols, params, T)
-fig.show()
-```
-
----
+Run the main.py
 
 ## Project Structure
 
