@@ -61,6 +61,7 @@ energy-vol-surface/
 │   └── visualization.py          # 2D smile slice and 3D surface renderers
 ├── tests/                        # Automated unit tests
 ├── pyproject.toml                # Build configuration and dependencies
+├── main.py                       # Run the code
 └── README.md
 ```
 
