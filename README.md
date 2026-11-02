@@ -19,7 +19,6 @@ It implements Black-76 implied volatility inversion, the Hagan asymptotic SABR s
 - [Mathematical Formulation](#mathematical-formulation)
 - [Running Tests](#running-tests)
 - [References](#references)
-- [License](#license)
 
 ---
 
